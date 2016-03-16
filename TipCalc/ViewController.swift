@@ -9,17 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var enterBillAmountLabel: UILabel!
+    @IBOutlet weak var billAmountTextField: UITextField!
+    @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var tipControl: UISegmentedControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tipLabel.text = "Tip: $0.00"
+        totalLabel.text = "Total: $0.00"
+        
     }
+    
+    // MARK: Methods
+    @IBAction func onEditingChanged(sender: AnyObject) {
+ 
+        var billAmount: Double! = Double(billAmountTextField.text!)
+        var tip = billAmount * 0.2
+        var total = billAmount + tip
+        
+        tipLabel.text = "Tip: $\(tip)"
+        totalLabel.text = "Total: $\(total)"
+        
+        
+        var tipPercentages = [0.18, 0.2, 0.22]
+        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func onTap(sender: AnyObject) {
+    view.endEditing(true)
+    }
 
 }
 

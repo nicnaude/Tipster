@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AC9D6A41C9370D100E8D20A /* TipCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AC9D6A41C9370D100E8D20A /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC9D6A71C9370D100E8D20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC9D6A91C9370D100E8D20A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4AC9D6AC1C9370D100E8D20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		4AC9D6A51C9370D100E8D20A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AC9D6A41C9370D100E8D20A /* TipCalc.app */,
+				4AC9D6A41C9370D100E8D20A /* Tipster.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4AC9D6A31C9370D100E8D20A /* TipCalc */ = {
+		4AC9D6A31C9370D100E8D20A /* Tipster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AC9D6B61C9370D100E8D20A /* Build configuration list for PBXNativeTarget "TipCalc" */;
+			buildConfigurationList = 4AC9D6B61C9370D100E8D20A /* Build configuration list for PBXNativeTarget "Tipster" */;
 			buildPhases = (
 				4AC9D6A01C9370D100E8D20A /* Sources */,
 				4AC9D6A11C9370D100E8D20A /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = TipCalc;
+			name = Tipster;
 			productName = TipCalc;
-			productReference = 4AC9D6A41C9370D100E8D20A /* TipCalc.app */;
+			productReference = 4AC9D6A41C9370D100E8D20A /* Tipster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4AC9D69F1C9370D100E8D20A /* Build configuration list for PBXProject "TipCalc" */;
+			buildConfigurationList = 4AC9D69F1C9370D100E8D20A /* Build configuration list for PBXProject "Tipster" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4AC9D6A31C9370D100E8D20A /* TipCalc */,
+				4AC9D6A31C9370D100E8D20A /* Tipster */,
 			);
 		};
 /* End PBXProject section */
@@ -249,8 +249,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TipCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasnaude.TipCalc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasnaude.Tipster;
+				PRODUCT_NAME = Tipster;
 			};
 			name = Debug;
 		};
@@ -260,15 +260,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TipCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasnaude.TipCalc;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicholasnaude.Tipster;
+				PRODUCT_NAME = Tipster;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AC9D69F1C9370D100E8D20A /* Build configuration list for PBXProject "TipCalc" */ = {
+		4AC9D69F1C9370D100E8D20A /* Build configuration list for PBXProject "Tipster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AC9D6B41C9370D100E8D20A /* Debug */,
@@ -277,13 +277,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AC9D6B61C9370D100E8D20A /* Build configuration list for PBXNativeTarget "TipCalc" */ = {
+		4AC9D6B61C9370D100E8D20A /* Build configuration list for PBXNativeTarget "Tipster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AC9D6B71C9370D100E8D20A /* Debug */,
 				4AC9D6B81C9370D100E8D20A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
