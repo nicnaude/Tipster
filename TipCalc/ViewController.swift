@@ -20,10 +20,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var customer2: UILabel!
     @IBOutlet weak var customer3: UILabel!
     @IBOutlet weak var customer4: UILabel!
-    
+    @IBOutlet weak var totalLine: UIView!
+    @IBOutlet weak var splitCover: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tipControl.layer.cornerRadius = 17
+        tipControl.layer.borderWidth = 1.5
+        tipControl.layer.borderColor = UIColor.tipsterDarkGreen().CGColor
+        tipControl.layer.masksToBounds = true
         
         navigationController!.navigationBar.barTintColor = UIColor.tipsterDarkGreen()
         navigationController?.navigationBar.barStyle = UIBarStyle.Black
@@ -35,10 +41,11 @@ class ViewController: UIViewController {
         tipLabel.alpha = 0
         totalLabel.alpha = 0
         tipControl.alpha = 0
-        customer1.alpha = 0
-        customer2.alpha = 0
-        customer3.alpha = 0
-        customer4.alpha = 0
+        totalLine.alpha = 0
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        billAmountTextField.becomeFirstResponder()
     }
     
     // MARK: Methods
@@ -51,10 +58,8 @@ class ViewController: UIViewController {
             tipLabel.alpha = 0
             totalLabel.alpha = 0
             tipControl.alpha = 0
-            customer1.alpha = 0
-            customer2.alpha = 0
-            customer3.alpha = 0
-            customer4.alpha = 0
+            splitCover.alpha = 1
+            totalLine.alpha = 0
             
         } else {
             
@@ -78,32 +83,30 @@ class ViewController: UIViewController {
             self.tipLabel.text = String(format: "Tip: $%.02f", tip)
             totalLabel.text = String(format: "Total: $%.02f", total)
             
-            customer1.text = String(format: "One person: $%.02f", total)
-            customer2.text = String(format: "Two people: $%.02f", total/2)
-            customer3.text = String(format: "Three people: $%.02f", total/3)
-            customer4.text = String(format: "Four people: $%.02f", total/4)
+            customer1.text = String(format: "$%.02f", total)
+            customer2.text = String(format: "$%.02f each", total/2)
+            customer3.text = String(format: "$%.02f each", total/3)
+            customer4.text = String(format: "$%.02f each", total/4)
             
-            tipLabel.fadeIn(0.2, delay: 0.2, completion: { (Bool) -> Void in
+            tipLabel.fadeIn(0.3, delay: 0.3, completion: { (Bool) -> Void in
                 return
             })
-            totalLabel.fadeIn(0.3, delay: 0.3, completion: { (Bool) -> Void in
+            totalLabel.fadeIn(0.4, delay: 0.4, completion: { (Bool) -> Void in
                 return
             })
-            tipControl.fadeIn(0.4, delay: 0.4, completion: { (Bool) -> Void in
+            totalLine.fadeIn(0.4, delay: 0.4, completion: { (Bool) -> Void in
                 return
             })
-            customer1.fadeIn(0.5, delay: 0.5, completion: { (Bool) -> Void in
+            tipControl.fadeIn(0.2, delay: 0.2, completion: { (Bool) -> Void in
                 return
             })
-            customer2.fadeIn(0.6, delay: 0.6, completion: { (Bool) -> Void in
+            //            splitCover.alpha = 0
+            splitCover.fadeOut(0.5, delay: 0.5, completion: { (Bool) -> Void in
                 return
             })
-            customer3.fadeIn(0.7, delay: 0.7, completion: { (Bool) -> Void in
-                return
-            })
-            customer4.fadeIn(0.8, delay: 0.8, completion: { (Bool) -> Void in
-                return
-            })
+            //            splitCover.fadeIn(0.0, delay: 0.0, completion: { (Bool) -> Void in
+            //                return
+            //            })
         }
     }
     
