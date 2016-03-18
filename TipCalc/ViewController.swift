@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         navigationController!.navigationBar.barTintColor = UIColor.tipsterDarkGreen()
         navigationController?.navigationBar.barStyle = UIBarStyle.Black
         navigationController?.navigationBar.tintColor = UIColor.whiteColor()
-        	
+        
         
         tipLabel.text = "Tip: $0.00"
         totalLabel.text = "Total: $0.00"
