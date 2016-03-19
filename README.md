@@ -22,4 +22,4 @@ Used stackviews to organise split bill icons.<BR>
 
 <b>Demo:</b>
 
-![Video Walkthrough](http://i.imgur.com/YQBjqNe.gif)
+![Video Walkthrough](http://i.imgur.com/9AXQP3O.gif)
