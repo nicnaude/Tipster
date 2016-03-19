@@ -20,4 +20,4 @@ Spent some time making the UI work across multiple phone sizes.
 Used stackviews to organise split bill icons.
 
 Demo:
-![Video Walkthrough](anim_rotten_tomatoes.gif)
+![Video Walkthrough](http://i.imgur.com/YQBjqNe.gif)
