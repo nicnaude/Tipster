@@ -4,7 +4,7 @@ Tipster displays the tip percentage on your total bill and conveniently displays
 
 Time spent: 6 hours spent in total
 
-Completed user stories:
+<b>Completed user stories:</b>
 
 Required: User can input total bill amount.
 Required: User can use the segmented control to switch between tip percentages.
