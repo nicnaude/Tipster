@@ -6,13 +6,17 @@ Time spent: 6 hours spent in total
 
 Completed user stories:
 
-Required: User can view a list of latest box office movies including title, cast and tomatoes rating
-Required: User can click on a movie in the list to bring up a details page with additional information such as synopsis
-Optional: Placeholder image is used for movie posters loaded in from the network
+Required: User can input total bill amount.
+Required: User can use the segmented control to switch between tip percentages.
+Required: Total amount label updates whenever bill amount is updated. 
+
+Optional: Used custom fonts.
+Optional: Added navigation controller and added Tipster logo to custom view.
+Optional: Added split bill feature to display the totals for up to four guests.
+Optional: Added app icon and splash screen.
 
 Notes:
-Spent some time making the UI work across multiple phone resolutions by playing around with the RelativeLayout.
-Walkthrough of all user stories:
+Spent some time making the UI work across multiple phone sizes.
+Used stackviews to organise split bill icons.
 
-Video Walkthrough
-GIF created with LiceCap.
+Demo:
