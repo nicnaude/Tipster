@@ -1,6 +1,6 @@
 <b>Welcome to Tipster.</b>
 
-Tipster displays the tip percentage and your total as well as the individual amounts for up to four users.
+Tipster displays the tip percentage, the user's total bill amount as well as the individual amounts for up to four users splitting a bill.
 
 <b>Time spent:</b> 6 hours spent in total
 
