@@ -1,8 +1,8 @@
 <b>Welcome to Tipster.</b>
 
-Tipster displays the tip percentage on your total bill and conveniently displays the total bill amount as well as the individual amounts for one, two, three or four dinner guests.
+Tipster displays the tip percentage and your total as well as the individual amounts for up to four users.
 
-Time spent: 6 hours spent in total
+<b>Time spent:</b> 6 hours spent in total
 
 <b>Completed user stories:</b>
 
