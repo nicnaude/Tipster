@@ -6,9 +6,9 @@ Tipster displays the tip percentage, the user's total bill amount as well as the
 
 <b>Completed user stories:</b>
 
-<p><b>Required:</b> User can input total bill amount.</p>
-<p><b>Required:</b> User can use the segmented control to switch between tip percentages.</p>
-<p><b>Required:</b> Total amount label updates whenever bill amount is updated.</p>
+<p><b>Required:</b> User can input total bill amount.
+<b>Required:</b> User can use the segmented control to switch between tip percentages.
+<b>Required:</b> Total amount label updates whenever bill amount is updated.</p>
 
 <b>Optional:</b> Used custom fonts.
 <b>Optional:</b> Added navigation controller and added Tipster logo to custom view.
